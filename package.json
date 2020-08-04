@@ -1,0 +1,29 @@
+{
+    "name": "simple-reddit",
+    "version": "1.0.0",
+    "description": "Simple Reddit using NextJS",
+    "main": "index.js",
+    "scripts": {
+        "dev": "next",
+        "build": "next build",
+        "start": "next start"
+    },
+    "author": "Ankit Kumar Verma",
+    "license": "ISC",
+    "dependencies": {
+        "@chakra-ui/core": "^0.8.0",
+        "@emotion/core": "^10.0.28",
+        "@emotion/styled": "^10.0.27",
+        "@sendgrid/mail": "^7.2.2",
+        "emotion-theming": "^10.0.27",
+        "firebase": "^7.17.1",
+        "next": "^9.5.0",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1",
+        "react-google-recaptcha": "^2.1.0",
+        "react-phone-number-input": "^3.0.25",
+        "react-places-autocomplete": "^7.3.0",
+        "react-tageditor": "^0.2.3",
+        "sendgrid": "^5.2.3"
+    }
+}
