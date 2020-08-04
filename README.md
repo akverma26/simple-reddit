@@ -34,13 +34,42 @@ https://github.com/akverma26/Simple-Reddit.git
 cd Simple-Reddit
 ```
 
-3. Install all the npm dependencies.
+3. Create a file named `private.js` in the root directory and paste the following and replace with your own credentials.
+
+```javascript
+const privateInfo = {
+    firebase: {
+        apiKey: "YOUR-API-KEY",
+        authDomain: "AUTH-DOMAIN",
+        databaseURL: "DATABASE-URL",
+        projectId: "PROJECT-ID",
+        storageBucket: "STORAGE-BUCKET",
+        messagingSenderId: "MESSAGING-SENDER-ID",
+        appId: "APP-ID",
+        measurementId: "MEASUREMENT-ID",
+    },
+
+    sendGridMail: {
+        apiKey:
+            "YOUR-SENDGRID-API-KEY",
+        emailFrom: "YOUR-EMAIL-FROM-WHERE-EMAIL-WILL-BE-SENT",
+    },
+
+    googReCaptcha: {
+        sitekey: "GOOGLE-RECAPTCHA-SITE-KEY",
+    },
+};
+
+export default privateInfo;
+```
+
+4. Install all the npm dependencies.
 
 ```shell
 npm install
 ```
 
-4. Run the app locally.
+5. Run the app locally.
 
 ```
 npm run dev
